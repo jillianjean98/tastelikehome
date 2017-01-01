@@ -31,7 +31,8 @@
 			preload(
 				"images/orange.png", 
 				"images/asparagus.png",
-				"images/tomato.png"
+				"images/tomato.png",
+				"images/bg.jpg"
 			)
 			function addLoadEvent(func){
 				var oldonload = window.onload;

@@ -1,0 +1,51 @@
+/*----- Accordion -----*/
+#accordion, #accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+ 
+.accordion {
+    overflow:hidden;
+
+    border-radius:3px;
+    
+}
+ 
+/*----- Section Titles -----*/
+.accordion-head {
+    width:99%;
+    padding:15px;
+    display:inline-block;
+    background:rgba(71,43,35,1);
+    transition:all linear 0.15s;
+	 border-radius: 10px;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+    /* Type */
+    font-size:1.200em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+	margin:.5%;
+}
+ 
+.accordion-head.active, .accordion-head:hover {
+    background:rgba(71,43,35,.7);
+    cursor: pointer;
+    /* Type */
+    text-decoration:none;
+}
+ 
+
+ 
+/*----- Section Content -----*/
+.accordion-content {
+	padding:15px;
+    display:none;
+}
+.accordion-content.default{
+	display:block;
+	}
+
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<link href="CSS/style.css" rel="stylesheet" type="text/css">
+<link href="CSS/tooltip.css" rel="stylesheet" type="text/css">
+<link href="CSS/accordion.css" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<script type="text/javascript" async defer src="js/pinit.js"></script>
+<script type="text/javascript" async defer src="js/pinit_main.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/accordion.js"></script>
+
+
+<div class="hidden">
+	<script type="text/javascript">
+		<!--Preload images -->
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"images/orange.png", 
+				"images/asparagus.png",
+				"images/tomato.png",
+				"images/bg.jpg"
+			)
+			function addLoadEvent(func){
+				var oldonload = window.onload;
+				if (typeof window.onload != 'function') {
+					window.onload = func;
+				} else {
+					window.onload = function() {
+				if (oldonload) {
+					oldonload();
+					}
+				func();
+				}
+				}
+		
+			}
+			addLoadEvent(preload);
+		<!--End preload-->
+		
+		function showTitleFrame(name){
+			var message=document.getElementById(name)
+			
+			
+		}
+	</script>
+	
+</div>
+</head>
+
+<body id="bg">
+<!--background images-->
+<img src="images/orange.png"  align="left" class="bgimageleft" title="oranges" alt="tomato background" id="oranges" />
+<img src="images/asparagus.png" align="right"  class="bgimageright" title="asparagus" alt="tomato background" id="asparagus" />
+<img src="images/tomato.png" align="left" class="bgimageleft" title="tomato" alt="tomato background" id="tomato" />
+<img src="images/apple.png" align="right"  class="bgimageright" title="apples" alt="apples background" id="apples" />
+<!--header and logo-->
+<a href="index.html"><img src="images/logos.png" alt="There's No Taste like Home logo" id="logo" title="Logo" /></a>
+<hr />
+<nav>
+<!-- menubar-->
+<div class="menu">
+  <ul>
+    <li><a href="index.html" id="homelogo">Home</a></li>
+    <li><a href="sauce.html" id="saucelogo">Sauces and Soups</a></li>
+    <li><a href="bread.html" id="breadlogo">Baked Goods</a></li>
+    <li><a href="dip.html" id="pblogo">Dips and Dressings</a></li>
+    <li><a href="about.html" id="aboutlogo">About</a></li>
+  </ul>
+</div>
+<!-- end menubar-->
+<!--selection menu- width <1180 px-->
+<select ONCHANGE="location = this.options[this.selectedIndex].value;"> 
+    <option value="" selected="selected">Menu</option> 
+    
+    <option value="index.html">Home</option> 
+    <option value="sauce.html">Sauces and Soups</option> 
+    <option value="bread.html" >Baked Goods</option> 
+    <option value="dip.html">Dips and Dressings</option> 
+    <option value="about.html">About</option> 
+  </select> 
+<!--end select menu-->
+</nav>
+<hr />
+<h1>About</h1>
+
+
+<!--main page body-->
+<div class="wrap">
+
+<div class="container1" style="background-color:rgba(177,180,89,.7); color:rgb(152,34,60);"><p> <h3>&nbsp; &nbsp;&nbsp;&nbsp;I hope you have enjoyed visiting my website as much as I enjoyed making it. <br /> &nbsp;&nbsp;&nbsp;&nbsp;More importantly, I hope it made you consider heading into the kitchen, cooking something, and discovering for yourself why <em>There's No Taste Like Home</em>!</h3></p>
+</div>
+<div class="sidebar">
+<h4>Sponsored by Michigan Council of Women in Technology</h4>
+<a href="http://www.mcwtwebdesign4girls.net/" target="new"><img src="images/MCWTlogo.png" width="100%" title="MCWT website" alt="MCWT logo" /></a>
+</div>
+
+<div class="container1">
+<h3>About Me</h3>
+<p>My name is Jillian, and I am a senior in high school. I took an Intro to Web Design class in 10th grade, where we learned HTML and CSS by using Dream Weaver. I enjoy coding and learning new computer languages in my free time. I also love to cook, so I was excited when I heard the theme for this year's competition. I had a great time making the recipes and taking the photographs for the site, along with coding the site itself. </p>
+
+<h3>How I made "There's No Taste Like Home"</h3>
+<h4>Software:</h4><p>
+I used Sublime Text to edit my HTML, CSS and Java Script. My images were edited in Photoshop Elements 10. I used YouTube to publish my video.
+</p>
+<h4>Images:</h4><p>
+All photographs on the site are mine. Clip art in the menu bar is from <a href="https://openclipart.org/" target="new">Open Clipart</a>.</p>
+<h4>Code Snippets:</h4><p>
+The accordion sliders on my "Baked Goods", "Dips and Dressings", and "Sauces and Soups" pages used jQuery and information from from <a href="http://api.jqueryui.com/accordion/" target="new">their documentation</a>. In order to allow for targeted opening, I used information from <a href="http://stackoverflow.com/questions/29279549/target-specific-item-in-accordion-with-jquery" target="new">Terry</a> on Stack Overflow. I formatted the code to start with all sections closed on page load, changed the style of the headers and text, and modified the display and positioning properties to fit the layout of my site.</p>
+<p>For the Tip-Moose, I used the <a href="http://cbracco.me/a-simple-css-tooltip/" target="new">Directional Tooltip</a> code from Chris Bracco. This allowed me to change the area the tooltip appeared in. I modified the stylesheet to match the text and coloring I wanted, and had to change the positioning to work on my site. 
+</p>
+<h4>Other Reference:</h4>
+<p>I often referenced <a href="www.w3schools.com" target="new">W3 Schools</a> for HTML and CSS syntax.
+</p>
+</div>
+		<div class="sidebar">
+				<a href="#secret" class="tooltip-right" onclick="document.getElementById('secret').style.display = 'inline-block'; document.getElementById('secret').style.width= '100%';" data-tooltip="Click me!"><img src="images/moose.png" alt="tip moose" id="tipMoose" width="80px"></a></h4>
+				<br /><br /><br />
+		</div>
+		<div id="secret">
+	<div class="container1"><img class="postImage" src="images/seeds.jpg" title="Pumpkin Seeds" alt="Pumpkin Seeds" />
+	<h3>Congratulations! You have found the Secret Recipe!</h3>
+	<p>Roasted pumpkin seeds are a delicious treat for fall. Crunchy, salty, sweet, spicy, they can be made any way that you like them. Store-bought pumpkin seeds tend to be expensive, have boring flavors, and are never fresh out of the oven. As an added bonus, if you make pumpkin soup, or carve jack-o-lanterns, you can use those seeds. In fact, I recommend using seeds fresh out of a pumpkin for the freshest taste. Just remove as much pulp as possible, rinse them with cold water in a strainer, and lay them to dry on a paper towel. They don't have to be perfectly dry before they get roasted, but the drier they are, the crisper they will be. 
+		
+		<img class="postImage" id="right" src="images/seedsCandle.jpg" title="Pumpkin Seeds" alt="Pumpkin Seeds with Candle" />
+		<h4>Roasted Pumpkin Seeds</h4>
+		<p>Ingredients</p>
+		<ul>
+		<li>Raw, washed pumpkin seeds</li>
+		<li>1 tbsp of oil for every cup of seeds</li>
+		<li>Seasonings of choice (see below)</li>
+		</ul>
+		<blockquote>Preheat the oven to 400° F, and line a baking sheet with aluminum foil. Toss the pumpkin seeds with the oil, and then the spices. Spread them in an even layer on the pan, and roast in the oven for 20-30 minutes, stirring every 10 minutes. They are finished when lightly browned and crispy. Enjoy right out of the oven, or store in an airtight container.</blockquote>
+
+		<h4>Flavor Combos</h4>
+	<ul>
+	<li>Classic: Use any type of oil and 1/4 tsp of salt.</li>
+	<li>Pumpkin Pie: Use coconut oil and toss with 1 tsp pumpkin pie spice and 1 tbsp sugar.</li>
+	<li>Savory: Use olive oil, 1/4 tsp each cumin, salt, pepper, garlic powder and onion powder.</li>
+	<li>Italian: Olive oil, 1/4 tsp each garlic powder, dried rosemary, salt and pepper.</li>
+	<li>Spicy: Use any oil, and 1/2 tsp chili powder (or more if you like it spicy!).</li>
+	<li>Chocolate: Toss with 1/2 c. melted chocolate per 2 c. seeds after roasting.</li>
+	</ul>
+
+	</div>
+</div>
+		</div>
+
+</div>
+</div>
+
+
+
+
+</body>
+</html>
